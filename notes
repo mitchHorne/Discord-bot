@@ -1,0 +1,122 @@
+## Very cool links
+https://buddy.works/tutorials/how-to-build-a-discord-bot-in-node-js-for-beginners
+https://www.npmjs.com/package/discord.js?source=post_page-----7b5fe27cb6fa----------------------
+https://stackoverflow.com/questions/68693319/why-am-i-getting-a-referenceerror-abortcontroller-is-not-defined-in-discord-js
+https://stackoverflow.com/questions/68766031/discord-bot-not-receiving-interactions
+https://discord.js.org/#/docs/main/stable/general/welcome
+https://discord.js.org/#/docs/main/stable/class/Client
+
+## Intents
+[class Intents extends BitField] {
+  FLAGS: {
+    GUILDS: 1,
+    GUILD_MEMBERS: 2,
+    GUILD_BANS: 4,
+    GUILD_EMOJIS_AND_STICKERS: 8,
+    GUILD_INTEGRATIONS: 16,
+    GUILD_WEBHOOKS: 32,
+    GUILD_INVITES: 64,
+    GUILD_VOICE_STATES: 128,
+    GUILD_PRESENCES: 256,
+    GUILD_MESSAGES: 512,
+    GUILD_MESSAGE_REACTIONS: 1024,
+    GUILD_MESSAGE_TYPING: 2048,
+    DIRECT_MESSAGES: 4096,
+    DIRECT_MESSAGE_REACTIONS: 8192,
+    DIRECT_MESSAGE_TYPING: 16384
+  }
+}
+
+## Structure of a message received
+Message {
+  channelId: '885817103611994134',
+  guildId: '885817103142252595',  
+  deleted: false,
+  id: '885833979046031370',       
+  type: 'DEFAULT',
+  system: false,
+  content: 'Hello Bot',
+  author: User {
+    id: '155774078194679808',     
+    bot: false,
+    system: false,
+    flags: UserFlags { bitfield: 0 },
+    username: 'mitch',
+    discriminator: '3945',
+    avatar: null
+  },
+  pinned: false,
+  tts: false,
+  nonce: '885833665559396352',
+  embeds: [],
+  components: [],
+  attachments: Collection(0) [Map] {},
+  stickers: Collection(0) [Map] {},
+  createdTimestamp: 1631269678604,
+  editedTimestamp: null,
+  reactions: ReactionManager { message: [Circular *1] },
+  mentions: MessageMentions {
+    everyone: false,
+    users: Collection(0) [Map] {},
+    roles: Collection(0) [Map] {},
+    _members: null,
+    _channels: null,
+    crosspostedChannels: Collection(0) [Map] {},
+    repliedUser: null
+  },
+  webhookId: null,
+  groupActivityApplication: null,
+  applicationId: null,
+  activity: null,
+  flags: MessageFlags { bitfield: 0 },
+  reference: null,
+  interaction: null
+}
+
+## Bot Message
+Message {
+  channelId: '885817103611994134',
+  guildId: '885817103142252595',
+  deleted: false,
+  id: '885834731369938994',
+  type: 'DEFAULT',
+  system: false,
+  content: 'Good juju',
+  author: ClientUser {
+    id: '885816296959275039',
+    bot: true,
+    system: false,
+    flags: UserFlags { bitfield: 0 },
+    username: 'Awesome BR bot of awesomeness',
+    discriminator: '5127',
+    avatar: null,
+    verified: true,
+    mfaEnabled: false
+  },
+  pinned: false,
+  tts: false,
+  nonce: null,
+  embeds: [],
+  components: [],
+  attachments: Collection(0) [Map] {},
+  stickers: Collection(0) [Map] {},
+  createdTimestamp: 1631269857972,
+  editedTimestamp: null,
+  reactions: ReactionManager { message: [Circular *1] },
+  mentions: MessageMentions {
+    everyone: false,
+    users: Collection(0) [Map] {},
+    roles: Collection(0) [Map] {},
+    _members: null,
+    _channels: null,
+    crosspostedChannels: Collection(0) [Map] {},
+    repliedUser: null
+  },
+  webhookId: null,
+  groupActivityApplication: null,
+  applicationId: null,
+  activity: null,
+  flags: MessageFlags { bitfield: 0 },
+  reference: null,
+  interaction: null
+}
